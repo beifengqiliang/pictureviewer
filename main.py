@@ -6,8 +6,9 @@ from PySide2.QtCore import QUrl
   
 app = QApplication([])
 view = QQuickView()
-url = QUrl("main.qml")
+url = QUrl("AnimatingAddedAndRemovedItems.qml")
  
 view.setSource(url)
 view.show()
+view.engine().quit.connect(app.quit)
 app.exec_()
