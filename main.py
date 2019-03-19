@@ -6,7 +6,7 @@ from PySide2.QtCore import QUrl
   
 app = QApplication([])
 view = QQuickView()
-url = QUrl("AnimatingAddedAndRemovedItems.qml")
+url = QUrl("CoverFlow/main.qml")
  
 view.setSource(url)
 view.show()
